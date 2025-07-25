@@ -1,5 +1,5 @@
 .loopstudio__main-container{
-    padding: 100px 0;
+    padding: 100px 32px;
 
     .loopstudio__main{
         gap: 40px;
@@ -22,22 +22,51 @@
 }
 
 .creations__grid{
+    grid-template-columns: 1fr;
     gap: 30px; 
 
     .creation__item{
         position: relative;
+        overflow: hidden;
+
+        .creations__image {
+            width: 100%;
+            display: block;
+        }
 
         .creations__item-title{
             position: absolute;
             text-transform: uppercase;
             bottom: 24px;
-            left: 24px;
+            left: 16px;
             color: var(--white);
             font-size: 24px;
             max-width: 125px;
         }
     }
 }
+
+// .creations__button {
+//   margin-top: 2rem;
+//   border: 1px solid black;
+//   background: none;
+//   padding: 0.5rem 2rem;
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   letter-spacing: 2px;
+//   cursor: pointer;
+// }
+
+// .creations__item:hover::after {
+//     content: '';
+//     position: absolute;
+//     inset: 0;
+//     background: rgba(0, 0, 0, 0.4);
+//   }
+
+// .creations__button--desktop {
+//     display: inline-block;
+//   }
 
 .creations__btn--desktop{
     display: none;
