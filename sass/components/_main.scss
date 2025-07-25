@@ -46,16 +46,17 @@
     }
 }
 
-// .creations__button {
-//   margin-top: 2rem;
-//   border: 1px solid black;
-//   background: none;
-//   padding: 0.5rem 2rem;
-//   text-transform: uppercase;
-//   font-weight: bold;
-//   letter-spacing: 2px;
-//   cursor: pointer;
-// }
+.creations__btn {
+  margin-block-start: 2rem;
+  border: 1px solid black;
+  background: none;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+      font-family: "Alata", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
 
 // .creations__item:hover::after {
 //     content: '';
