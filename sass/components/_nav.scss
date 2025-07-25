@@ -21,7 +21,9 @@
 .nav__list{
     list-style-type: none;
     display: block;
-    margin-block: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav__item{
