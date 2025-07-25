@@ -1,7 +1,7 @@
 openMenu = document.querySelector(".nav__open");
 closeMenu = document.querySelector(".nav__close");
-navMenu = document.querySelector(".nav__menu");
-navItems = document.querySelectorAll(".nav__item");
+navMenu = document.querySelector(".loopstudio__header .nav__menu");
+navItems = document.querySelectorAll(".loopstudio__header .nav__item");
 
 openMenu.addEventListener("click", ()=>{
     navMenu.classList.toggle("toggle");
