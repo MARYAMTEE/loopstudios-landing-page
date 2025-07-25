@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --grey-200: hsl(0, 0%, 85%);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    background-color: var(--white);
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    place-items: center;
+}

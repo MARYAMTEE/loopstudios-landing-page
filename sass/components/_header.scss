@@ -1,0 +1,21 @@
+.loopstudio__header-container{
+    background-image: url('../images/mobile/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    padding: 48px 24px;
+
+    .loopstudio__logo{
+        position: relative;
+        justify-content: space-between;
+    }
+
+.loopstudio__banner-text{
+        border: 2px solid var(--white);
+        color: var(--white);
+        text-transform: uppercase;
+        margin-block: 50%;
+    }
+}
