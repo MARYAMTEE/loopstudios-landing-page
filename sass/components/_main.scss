@@ -1,0 +1,44 @@
+.loopstudio__main-container{
+    padding: 100px 0;
+
+    .loopstudio__main{
+        gap: 40px;
+    }
+
+    .main__interactive-header,
+    .creations__title{
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        margin-block: 38px 32px;
+        text-align: center;
+    }
+
+    .main__interactive-paragraph{
+        color: grey;
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: center;
+    }
+}
+
+.creations__grid{
+    gap: 30px; 
+
+    .creation__item{
+        position: relative;
+
+        .creations__item-title{
+            position: absolute;
+            text-transform: uppercase;
+            bottom: 24px;
+            left: 24px;
+            color: var(--white);
+            font-size: 24px;
+            max-width: 125px;
+        }
+    }
+}
+
+.creations__btn--desktop{
+    display: none;
+}
