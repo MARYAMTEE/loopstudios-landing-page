@@ -1,3 +1,26 @@
 .loopstudio__footer{
     background-color: var(--black);
+    padding: 48px;
+
+    .footer__nav{
+        margin-block: 32px;
+
+        &-link{
+            text-decoration: none;
+            color: white;
+        }
+
+        &-item{
+            margin-block-end: 24px;
+        }
+    }
+
+    .footer__socials{
+        gap: 16px;
+    }
+
+    .footer__copyright{
+        color: var(--grey-200);
+        margin-block-start: 24px;
+    }
 }

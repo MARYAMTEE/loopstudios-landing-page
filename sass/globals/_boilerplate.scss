@@ -18,6 +18,14 @@ img{
 body{
     background-color: var(--white);
     width: 100%;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: clamp(15px, 1vw + 8px, 16px);
+}
+
+h1, h2, h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
 }
 
 .flex{

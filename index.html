@@ -46,7 +46,7 @@
             </nav>
         </header>
 
-        <div class="loopstudio__banner-text">
+        <div class="loopstudio__banner-text grid">
             <h1 class="banner__title">Immersive experiences that deliver</h1>
         </div>
     </div>
@@ -142,41 +142,29 @@
         </main>
     </div>
 
-    <footer class="loopstudio__footer grid">
-        <nav class="footer__nav">
-           <div class="nav__header">
-               <img src="./images/logo.svg" alt="Logo image" class="nav__logo-img">
-           </div>
+    <footer class="loopstudio__footer">
+        <div class="footer__container grid">
+            <div class="footer__top">
+            <img src="./images/logo.svg" alt="Loopstudios logo" class="footer__logo">
 
-           <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">about</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">careers</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">events</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">products</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">supports</a></li>
+            <ul class="footer__nav grid">
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">About</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Careers</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Events</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Products</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Support</a></li>
             </ul>
-        </nav>
-
-        <div class="loopstudio__footer-socials">
-            <div class="loopstudio__social-icons">
-                <button class="social__btn" aria-label="Navigation icon">
-                    <img src="./images/icon-facebook.svg" class="social__icon" alt="" aria-hidden="true">
-                </button>
-
-                <button class="social__btn" aria-label="Navigation icon">
-                    <img src="./images/icon-twitter.svg" class="social__icon" alt="" aria-hidden="true">
-                </button>
-
-                <button class="social__btn" aria-label="Navigation icon">
-                    <img src="./images/icon-pinterest.svg" class="social__icon" alt="" aria-hidden="true">
-                </button>
-
-                <button class="social__btn" aria-label="Navigation icon">
-                    <img src="./images/icon-instagram.svg" class="social__icon" alt="" aria-hidden="true">
-                </button>
             </div>
 
-            <span>&copy; 2021 Loopstudios. All rights reseverved.</span>
+            <div class="footer__bottom">
+                <div class="footer__socials flex">
+                    <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook" class="footer__icon"></a>
+                    <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter" class="footer__icon"></a>
+                    <a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest" class="footer__icon"></a>
+                    <a href="#"><img src="./images/icon-instagram.svg" alt="Instagram" class="footer__icon"></a>
+                </div>
+                <p class="footer__copyright">&copy; 2021 Loopstudios. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
