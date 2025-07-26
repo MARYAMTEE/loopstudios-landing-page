@@ -19,8 +19,7 @@
         position: relative;
         top: 0;
         right: 0;
-        height: auto;
-        width: auto;
+        padding: 0;
         background-color: transparent;
         transition: none;
     }
@@ -42,13 +41,21 @@
 
         @include u.breakpoint(large){
             display: flex;
-            gap: 24px;
+            justify-content: flex-end;
+            gap: 32px;
             margin: 0 auto;
+            top: 0;
+            transform: none;
+            position: static;
         }
     }
 
     .nav__item{
         margin-block-end: 30px;
+
+        @include u.breakpoint(large){
+            margin-block-end: 0;
+        }
     }
 
     .nav__link{
@@ -61,6 +68,8 @@
 
         @include u.breakpoint(large){ 
             text-transform: capitalize;
+            font-weight: 500;
+            font-size: 16px;
         }
     }
 }
