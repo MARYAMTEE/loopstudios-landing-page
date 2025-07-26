@@ -1,3 +1,5 @@
+@use '../utils/' as u;
+
 .loopstudio__main-container{
     padding: 100px 32px;
 
@@ -23,11 +25,20 @@
 
 .creations__grid{
     grid-template-columns: 1fr;
-    gap: 30px; 
+    gap: 30px;
+    
+    @include u.breakpoint(medium){
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include u.breakpoint(large) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
     .creation__item{
         position: relative;
         overflow: hidden;
+        color: var(--white);
 
         .creations__image {
             width: 100%;
@@ -39,31 +50,32 @@
             text-transform: uppercase;
             bottom: 24px;
             left: 16px;
-            color: var(--white);
-            font-size: 24px;
-            max-width: 125px;
+            font-size: 26px;
+            max-width: 140px;
         }
     }
 }
 
 .creations__btn {
-  margin-block-start: 2rem;
-  border: 1px solid black;
+  margin-block-start: 3rem;
+  border: 2px solid black;
+  outline: none;
   background: none;
-  padding: 0.5rem 2rem;
+  padding: 14px 64px;
   text-transform: uppercase;
-      font-family: "Alata", sans-serif;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
   cursor: pointer;
 }
 
-// .creations__item:hover::after {
-//     content: '';
-//     position: absolute;
-//     inset: 0;
-//     background: rgba(0, 0, 0, 0.4);
-//   }
+.creation__item:hover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(243, 243, 243, 0.4);
+    color: black;
+  }
 
 // .creations__button--desktop {
 //     display: inline-block;

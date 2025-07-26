@@ -27,13 +27,16 @@
 }
 
 .nav__item{
-    margin-block-end: 32px;
+    margin-block-end: 30px;
 }
 
 .nav__link{
     text-decoration: none;
     text-transform: uppercase;
     color: var(--white);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
 }
 
 .nav__open,
