@@ -1,3 +1,5 @@
+@use '../utils/' as u;
+
 .nav__menu{
     position: fixed;
     top: 0;
@@ -12,31 +14,63 @@
     &.toggle{
         right: 0;
     }
-}
 
-.nav__header{
+    @include u.breakpoint(large){
+        position: relative;
+        top: 0;
+        right: 0;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        transition: none;
+    }
+
+    .nav__header{
     justify-content: space-between;
+
+    @include u.breakpoint(large){
+        display: none;
+    }
 }
 
-.nav__list{
-    list-style-type: none;
+    .nav__list{
+        list-style-type: none;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include u.breakpoint(large){
+            display: flex;
+            gap: 24px;
+            margin: 0 auto;
+        }
+    }
+
+    .nav__item{
+        margin-block-end: 30px;
+    }
+
+    .nav__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--white);
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+
+        @include u.breakpoint(large){ 
+            text-transform: capitalize;
+        }
+    }
+}
+
+.nav__open{
     display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-.nav__item{
-    margin-block-end: 30px;
-}
-
-.nav__link{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--white);
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
-    font-size: 25px;
+    @include u.breakpoint(large){
+        display: none;
+    }
 }
 
 .nav__open,
