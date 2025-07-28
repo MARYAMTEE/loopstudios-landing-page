@@ -57,7 +57,7 @@
 
         @include u.breakpoint(large){
             position: absolute;
-            right: 0;
+            right: 50px;
             bottom: 0;
             transform: translateY(20%);
             padding: 3rem 5rem;
