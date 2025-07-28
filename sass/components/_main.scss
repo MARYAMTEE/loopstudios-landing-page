@@ -79,51 +79,16 @@
     }
 
 
-// .loopstudio__main-container{
-//     padding: 100px 32px;
-
-//         .main__interactive{
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             position: relative;
-//             text-align: center;
-//             padding: 2rem;
-
-//             @include u.breakpoint(medium){
-//                 flex-direction: row;
-//                 align-items: flex-end;
-//                 justify-content: center;
-//                 padding: 6rem 4rem;
-//                 text-align: left;
-//             }
-//         }
-//     }
-
-//     .main__interactive-image{
-//         @include u.breakpoint(medium){
-//             position: relative;
-//             flex: 1;
-//         }
-//     }
-
-//     .main__interactive-text{
-//         background-color: var(--white);
-
-//         @include u.breakpoint(medium){
-//             position: absolute;
-//             right: 0;
-//             bottom: 0;
-//             transform: translateY(50%);
-//             padding: 3rem;
-//             max-width: 400px;
-//         }
-//     }
-
+.creations__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .creations__grid{
     grid-template-columns: 1fr;
     gap: 30px;
+    margin-block: 64px;
     
     @include u.breakpoint(medium){
         grid-template-columns: repeat(3, 1fr);
@@ -155,7 +120,6 @@
 }
 
 .creations__btn {
-  margin-block-start: 3rem;
   border: 2px solid black;
   outline: none;
   background: none;
@@ -175,10 +139,20 @@
     color: black;
   }
 
-// .creations__button--desktop {
-//     display: inline-block;
-//   }
 
 .creations__btn--desktop{
     display: none;
+
+    @include u.breakpoint(medium){
+        display: inline-block;
+    }
+}
+
+.creations__btn--mobile{
+    display: block;
+    margin: 3rem auto 0;
+
+    @include u.breakpoint(medium){
+        display: none;
+    }
 }

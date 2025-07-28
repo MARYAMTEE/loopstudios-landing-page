@@ -1,9 +1,30 @@
+@use '../utils/' as u;
+
 .loopstudio__footer{
     background-color: var(--black);
     padding: 48px;
 
+    @include u.breakpoint(medium){
+        padding: 48px 0;
+    }
+
+    .footer__container{
+        @include u.breakpoint(medium){
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+        }
+    }
+
+    .footer__logo{
+        width: 130px;
+    }
+
     .footer__nav{
         margin-block: 32px;
+
+        @include u.breakpoint(medium){
+                margin-block-end: 0;
+            }
 
         &-link{
             text-decoration: none;
@@ -12,11 +33,25 @@
 
         &-item{
             margin-block-end: 24px;
+
+            @include u.breakpoint(medium){
+                margin-block-end: 0;
+            }
+        }
+
+        @include u.breakpoint(medium){
+            display: flex;
+            align-items: center;
+            gap: 42px;
         }
     }
 
     .footer__socials{
         gap: 16px;
+
+        @include u.breakpoint(medium){
+            justify-content: flex-end;
+        }
     }
 
     .footer__copyright{
