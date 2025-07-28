@@ -1,27 +1,125 @@
 @use '../utils/' as u;
-
 .loopstudio__main-container{
-    padding: 100px 32px;
+      padding: 100px 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+}
 
-    .loopstudio__main{
-        gap: 40px;
+.main__interactive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @include u.breakpoint(medium){
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-block-end: 13rem;
     }
 
-    .main__interactive-header,
-    .creations__title{
-        text-transform: uppercase;
-        font-size: 2.1rem;
-        margin-block: 38px 32px;
-        text-align: center;
+    @include u.breakpoint(large){
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-block-end: 10rem;
     }
 
-    .main__interactive-paragraph{
-        color: grey;
-        font-size: 1rem;
-        line-height: 1.7;
+    .main__interactive-image{
+        @include u.breakpoint(medium){
+            flex: 1;
+            max-width: 60%;
+        }
+
+        .interactive__image{
+            height: auto;
+        }
+    }
+
+    .main__interactive-text{
+        background-color: var(--white);
         text-align: center;
+
+        @include u.breakpoint(medium){
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translateY(50%);
+            padding: 2rem;
+            flex: 1;
+            max-width: 500px;
+            text-align: left;
+        }
+
+        @include u.breakpoint(large){
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translateY(20%);
+            padding: 3rem 5rem;
+            flex: 1;
+            max-width: 624px;
+            text-align: left;
+        }
+
+        .main__interactive-paragraph{
+            color: grey;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
     }
 }
+
+.main__interactive-header,
+    .creations__title{
+        text-transform: uppercase;
+        font-size: clamp(2.1rem, 4vw, 2.5rem);
+        margin-block: 48px 30px;
+        color: black;
+    }
+
+
+// .loopstudio__main-container{
+//     padding: 100px 32px;
+
+//         .main__interactive{
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             position: relative;
+//             text-align: center;
+//             padding: 2rem;
+
+//             @include u.breakpoint(medium){
+//                 flex-direction: row;
+//                 align-items: flex-end;
+//                 justify-content: center;
+//                 padding: 6rem 4rem;
+//                 text-align: left;
+//             }
+//         }
+//     }
+
+//     .main__interactive-image{
+//         @include u.breakpoint(medium){
+//             position: relative;
+//             flex: 1;
+//         }
+//     }
+
+//     .main__interactive-text{
+//         background-color: var(--white);
+
+//         @include u.breakpoint(medium){
+//             position: absolute;
+//             right: 0;
+//             bottom: 0;
+//             transform: translateY(50%);
+//             padding: 3rem;
+//             max-width: 400px;
+//         }
+//     }
+
 
 .creations__grid{
     grid-template-columns: 1fr;
