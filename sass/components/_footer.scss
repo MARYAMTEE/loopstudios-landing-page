@@ -4,10 +4,6 @@
     background-color: var(--black);
     padding: 48px 0;
 
-    // @include u.breakpoint(large){
-        
-    // }
-
     .footer__container{
         @include u.breakpoint(medium){
             grid-template-columns: 1fr 1fr;       
@@ -39,6 +35,12 @@
         }
 
         @include u.breakpoint(medium){
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        @include u.breakpoint(large){
             display: flex;
             align-items: center;
             gap: 42px;

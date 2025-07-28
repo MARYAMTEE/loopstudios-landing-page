@@ -1,7 +1,7 @@
 @use '../utils/' as u;
 
 .loopstudio__header-container{
-    background-image: url('../images/mobile/image-hero.jpg');
+    background-image: url('/images/mobile/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -10,7 +10,7 @@
     position: relative;
 
     @include u.breakpoint(medium){
-        background-image: url('../images/desktop/image-hero.jpg');
+        background-image: url('/images/desktop/image-hero.jpg');
         background-position: center;
         padding: 64px 80px;
     }
