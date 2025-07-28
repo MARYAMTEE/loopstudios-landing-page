@@ -1,7 +1,7 @@
 @use '../utils/' as u;
 .loopstudio__main-container{
-      padding: 100px 32px;
-      max-width: 1200px;
+      padding: u.rem(100) u.rem(32);
+      max-width: u.rem(1200);
       margin: 0 auto;
 }
 
@@ -47,7 +47,7 @@
             transform: translateY(50%);
             padding: 2rem;
             flex: 1;
-            max-width: 500px;
+            max-width: u.rem(500);
             text-align: left;
         }
 
@@ -58,7 +58,7 @@
             transform: translateY(20%);
             padding: 3rem 4.9rem;
             flex: 1;
-            max-width: 624px;
+            max-width: u.rem(624);
             text-align: left;
         }
 
@@ -74,7 +74,7 @@
     .creations__title{
         text-transform: uppercase;
         font-size: clamp(2.1rem, 4vw, 2.5rem);
-        margin-block: 48px 30px;
+        margin-block: u.rem(48) u.rem(30);
         color: black;
     }
 
@@ -89,8 +89,8 @@
 
 .creations__grid{
     grid-template-columns: 1fr;
-    gap: 30px;
-    margin-block: 64px;
+    gap: u.rem(30);
+    margin-block: u.rem(64);
     
     @include u.breakpoint(medium){
         grid-template-columns: repeat(3, 1fr);
@@ -113,24 +113,24 @@
         .creations__item-title{
             position: absolute;
             text-transform: uppercase;
-            bottom: 24px;
-            left: 16px;
-            font-size: 26px;
-            max-width: 140px;
+            bottom: u.rem(24);
+            left: u.rem(16);
+            font-size: u.rem(26);
+            max-width: u.rem(140);
             z-index: 2;
         }
     }
 }
 
 .creations__btn {
-  border: 2px solid black;
+  border: u.rem(2) solid black;
   outline: none;
   background: none;
-  padding: 14px 64px;
+  padding: u.rem(14) u.rem(64);
   text-transform: uppercase;
   font-family: "Alata", sans-serif;
-  font-size: 20px;
-  letter-spacing: 5px;
+  font-size: u.rem(20);
+  letter-spacing: u.rem(5);
   cursor: pointer;
 }
 

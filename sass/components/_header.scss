@@ -6,13 +6,13 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
-    padding: 48px 24px;
+    padding: u.rem(48) u.rem(24);
     position: relative;
 
     @include u.breakpoint(medium){
         background-image: url('../../images/desktop/image-hero.jpg');
         background-position: center;
-        padding: 64px 80px;
+        padding: u.rem(64) u.rem(80);
     }
 
     .loopstudio__header{
@@ -30,9 +30,9 @@
     }
 
     .loopstudio__banner-text{
-        border: 2px solid var(--white);
-        padding: 32px 40px;
-        max-width: 600px;
+        border: u.rem(2) solid var(--white);
+        padding: u.rem(32) u.rem(40);
+        max-width: u.rem(600);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -41,13 +41,13 @@
         @include u.breakpoint(large){
             left: 0;
             transform: translate(0, -50%);
-            margin-inline-start: 80px;
+            margin-inline-start: u.rem(80);
         }
 
         .banner__title{
             color: var(--white);
             text-transform: uppercase;
-            font-size: clamp(40px, 6vw, 64px);
+            font-size: clamp(u.rem(40), 6vw, u.rem(64));
         }
     }
 }

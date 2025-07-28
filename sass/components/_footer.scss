@@ -2,7 +2,7 @@
 
 .loopstudio__footer{
     background-color: var(--black);
-    padding: 48px 0;
+    padding: u.rem(48) 0;
 
     .footer__container{
         @include u.breakpoint(medium){
@@ -11,11 +11,11 @@
     }
 
     .footer__logo{
-        width: 130px;
+        width: u.rem(130);
     }
 
     .footer__nav{
-        margin-block: 32px;
+        margin-block: u.rem(32);
 
         @include u.breakpoint(medium){
                 margin-block-end: 0;
@@ -27,7 +27,7 @@
         }
 
         &-item{
-            margin-block-end: 24px;
+            margin-block-end: u.rem(24);
 
             @include u.breakpoint(medium){
                 margin-block-end: 0;
@@ -37,18 +37,18 @@
         @include u.breakpoint(medium){
             display: flex;
             align-items: center;
-            gap: 24px;
+            gap: u.rem(24);
         }
 
         @include u.breakpoint(large){
             display: flex;
             align-items: center;
-            gap: 42px;
+            gap: u.rem(42);
         }
     }
 
     .footer__socials{
-        gap: 16px;
+        gap: u.rem(16);
 
         @include u.breakpoint(medium){
             justify-content: flex-end;
@@ -57,6 +57,6 @@
 
     .footer__copyright{
         color: grey;
-        margin-block-start: 32px;
+        margin-block-start: u.rem(32);
     }
 }

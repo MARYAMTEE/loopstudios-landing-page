@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     transition: right 0.5s ease-in-out;
-    padding: 48px 32px;
+    padding: u.rem(48) u.rem(32);
     z-index: 1;
 
     &.toggle{
@@ -42,7 +42,7 @@
         @include u.breakpoint(large){
             display: flex;
             justify-content: flex-end;
-            gap: 32px;
+            gap: u.rem(32);
             margin: 0 auto;
             top: 0;
             transform: none;
@@ -51,7 +51,7 @@
     }
 
     .nav__item{
-        margin-block-end: 30px;
+        margin-block-end: u.rem(30);
 
         @include u.breakpoint(large){
             margin-block-end: 0;
@@ -64,12 +64,12 @@
         color: var(--white);
         font-family: "Josefin Sans", sans-serif;
         font-weight: 300;
-        font-size: 25px;
+        font-size: u.rem(25);
 
         @include u.breakpoint(large){ 
             text-transform: capitalize;
             font-weight: 500;
-            font-size: 16px;
+            font-size: u.rem(16);
         }
     }
 }

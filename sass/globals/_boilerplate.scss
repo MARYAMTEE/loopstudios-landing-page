@@ -1,3 +1,5 @@
+@use '../utils/' as u;
+
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +23,7 @@ body{
     width: 100%;
     font-family: "Alata", sans-serif;
     font-weight: 500;
-    font-size: clamp(15px, 1vw + 8px, 16px);
+    font-size: clamp(u.rem(15), 1vw + u.rem(8), u.rem(16));
 }
 
 h1, h2, h3{
