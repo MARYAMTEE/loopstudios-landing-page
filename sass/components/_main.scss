@@ -132,6 +132,7 @@
   font-size: u.rem(20);
   letter-spacing: u.rem(5);
   cursor: pointer;
+  transition: 0.5s all ease-in;
 }
 
 .creations__btn:hover{
