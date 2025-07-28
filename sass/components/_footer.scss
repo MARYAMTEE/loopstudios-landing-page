@@ -2,16 +2,15 @@
 
 .loopstudio__footer{
     background-color: var(--black);
-    padding: 48px;
+    padding: 48px 0;
 
-    @include u.breakpoint(medium){
-        padding: 48px 0;
-    }
+    // @include u.breakpoint(large){
+        
+    // }
 
     .footer__container{
         @include u.breakpoint(medium){
-            grid-template-columns: 1fr 1fr;
-            place-items: center;
+            grid-template-columns: 1fr 1fr;       
         }
     }
 

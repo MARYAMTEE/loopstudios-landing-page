@@ -3,6 +3,10 @@
       padding: 100px 32px;
       max-width: 1200px;
       margin: 0 auto;
+
+      @include u.breakpoint(medium){
+        padding: 100px 0;
+      }
 }
 
 .main__interactive{
@@ -80,9 +84,11 @@
 
 
 .creations__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include u.breakpoint(medium){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .creations__grid{
