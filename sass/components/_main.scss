@@ -115,9 +115,13 @@
             text-transform: uppercase;
             bottom: u.rem(24);
             left: u.rem(16);
-            font-size: u.rem(26);
-            max-width: u.rem(140);
+            font-size: clamp(u.rem(26), 2.5vw, u.rem(30));
+            max-width: u.rem(160);
             z-index: 2;
+
+            @include u.breakpoint(medium){
+                bottom: u.rem(32);
+            }
         }
     }
 }
@@ -140,12 +144,16 @@
     color: var(--white);
 }
 
-.creation__item:hover::after {
+.creation__item::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(243, 243, 243, 0.4);
+    background: rgba(5, 0, 0, 0.367);
     z-index: 1;
+}
+
+.creation__item:hover::after{
+     background: rgba(243, 243, 243, 0.4);
 }
 
 .creation__item:hover {
