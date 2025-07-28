@@ -15,14 +15,14 @@
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
-        margin-block-end: 13rem;
+        margin-block: 3rem 13rem;
     }
 
     @include u.breakpoint(large){
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
-        margin-block-end: 10rem;
+        margin-block: 3rem 10rem;
     }
 
     .main__interactive-image{
@@ -53,10 +53,10 @@
 
         @include u.breakpoint(large){
             position: absolute;
-            right: 50px;
+            right: 0;
             bottom: 0;
             transform: translateY(20%);
-            padding: 3rem 5rem;
+            padding: 3rem 4.9rem;
             flex: 1;
             max-width: 624px;
             text-align: left;
@@ -132,6 +132,11 @@
   font-size: 20px;
   letter-spacing: 5px;
   cursor: pointer;
+}
+
+.creations__btn:hover{
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .creation__item:hover::after {
