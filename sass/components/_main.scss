@@ -78,7 +78,14 @@
         color: black;
     }
 
+    .creations__title{
+        text-align: center;
 
+        @include u.breakpoint(medium){
+            text-align: left;
+        }
+    }
+    
 .creations__header{
     @include u.breakpoint(medium){
         display: flex;
@@ -137,6 +144,7 @@
   letter-spacing: u.rem(5);
   cursor: pointer;
   transition: 0.3s all ease-in;
+  color: black;
 }
 
 .creations__btn:hover{
