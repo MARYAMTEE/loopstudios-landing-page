@@ -13,6 +13,7 @@
         background-image: url('../images/desktop/image-hero.jpg');
         background-position: center;
         padding: u.rem(64) u.rem(80);
+        height: u.rem(500);
     }
 
     .loopstudio__header{
@@ -34,9 +35,9 @@
         padding: u.rem(32) u.rem(40);
         max-width: u.rem(600);
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-60%, -50%);
 
         @include u.breakpoint(large){
             left: 0;
@@ -47,7 +48,7 @@
         .banner__title{
             color: var(--white);
             text-transform: uppercase;
-            font-size: clamp(u.rem(40), 6vw, u.rem(64));
+            font-size: clamp(u.rem(48), 6vw, u.rem(64));
         }
     }
 }
