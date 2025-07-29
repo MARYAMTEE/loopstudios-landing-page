@@ -65,11 +65,30 @@
         font-family: "Josefin Sans", sans-serif;
         font-weight: 300;
         font-size: u.rem(25);
+        position: relative;
 
         @include u.breakpoint(large){ 
             text-transform: capitalize;
             font-weight: 500;
             font-size: u.rem(16);
+            padding-block: u.rem(16);
+            display: inline-block;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                width: 0%;
+                height: u.rem(2);
+                background-color: white;
+                transition: width 0.3s ease-in-out;
+                transform: translateX(-50%);
+            }
+
+            &:hover::after {
+                width: 50%;
+            }
         }
     }
 }
